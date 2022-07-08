@@ -26,8 +26,8 @@ def game():
     while player not in [i for i in range(len(option))]:
         try:
             player = int(input("\nPlayer: ")) - 1
-        except:
-            print("Error: This is not one of the possible choices!")
+        except ValueError:
+            print("Error: This is not one of the possible choices !")
     bot = option.index(choice(option))
     print("Bot: {}".format(option[bot]))
 
