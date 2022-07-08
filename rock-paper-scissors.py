@@ -38,4 +38,5 @@ def game():
     }
     print("\n{}".format(result[rule[player][bot]]))
 
+    
 game()
